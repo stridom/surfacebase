@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 声明在标签里面的信息是配置信息 -->
+<configuration>
+    <!-- 声明在该标签里面的信息是一个个的别名 -->
+    <typeAliases>
+        <!-- 声明要使用别名的对象（全路径）用java注解的话可以使用@Alias注解声明 -->
+        <typeAlias type="com.jnshu.Pojo.Student" alias="student"/>
+    </typeAliases>
+    <!-- 声明我们定义的一个个Mapper类，或者说是关联 -->
+    <mappers>
+        <!-- 声明Mapper的路径 -->
+        <mapper resource="StudentMapper.xml"/>
+    </mappers>
+</configuration>
